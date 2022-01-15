@@ -1,7 +1,11 @@
-/* imported Font Style */
+/*-------------------------
+     imported Font Style 
+---------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto:wght@400;500&display=swap');
 
-/* custom variable */
+/*-----------------------------
+        custom variable 
+-------------------------------*/
 :root{
     --heading-font:'Quicksand', sans-serif;
     --body-font:'Roboto', sans-serif;
@@ -12,6 +16,7 @@ html,body{
     margin: 0;
     padding: 0;
     border: 0px;
+    position: 0;
     clear: both;
     font-style: var(--body-font);
 }
@@ -21,44 +26,52 @@ html,body{
 
 
 nav{
+    margin-top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    height: 80px;
+    background-color:#0a0826;
+    margin-bottom: 50px;
 }
 .logo{
-    width: 50%;
+    width: 40%;
 }
 .logo p{
-    color: #120E43;
+    color: #FFFFFF;
     padding-left: 20%;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-}
-
-.nav-option>ul>li {
-    list-style: none;
-}
-
-.nav-list li a{
-    text-decoration: none;
-    padding: 10px 15px;
-    color: black;
 }
 
 .nav-list{
     display: flex;
-    flex-wrap: wrap;
-
+}
+.nav-list li {
+    list-style: none;
 }
 
-/* banner section */
+
+
+.nav-list li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/*------------------------------
+       banner section 
+--------------------------------*/
 
 
 .banner{
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .banner-info{
@@ -117,23 +130,27 @@ nav{
 
 }
 
-/* disply-logo section style */
+/*---------------------------------------
+     disply-logo section style 
+-----------------------------------------*/
 
 .logos{
     display: flex;align-items: center;
     justify-content: center;
-    margin: 20px 90px;
-    padding: 30px 20px;
+    margin: 20px 100px;
+    padding: 30px 40px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1) , 0 -10px 10px -10px rgba(0, 0, 0, 0.1) ;
 }
 
 .logos img{
     width: 70%;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 
-/* Collection section */
+/*--------------------------
+  Collection section style
+---------------------------*/
 .collection-title{
     color: #3A3A3A;
     font-size: 28px;
@@ -164,11 +181,12 @@ nav{
 }
 
 
-/* Rating style */
+/*-------------------
+  Rating style 
+-----------------*/
 
 .product-rating{
     display: flex;
-    /* align-items: center; */
 }
 .star{
     font-size: 12px;
@@ -238,7 +256,9 @@ nav{
 
 
 
- /* Service style */
+ /*-------------------------
+   Service section style 
+--------------------------*/
 
  .service-section h2{
      text-align: center;
@@ -286,7 +306,9 @@ footer{
     background-color: #0a0826;
 }
 
-/* footer style */
+/*--------------
+  footer style 
+----------------*/
 
 .footer h3{
     color: #fff;
@@ -330,9 +352,22 @@ footer{
 
 
 
-/* media query */
+/*---------------
+    media query
+ ---------------- */
 
 @media only screen and  (max-width: 767px) { 
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .logo p{
+        padding: 0;
+    }
+    .nav-option{
+        display: none;
+    }
 
     .banner{
         display: flex;
@@ -392,9 +427,21 @@ footer{
     }
 }
 
-/*  For Tablet */
-@media only screen and (min-width: 768px) and  (max-width: 1023px) { 
+/*--------------
+  For Tablet
+  ------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
 
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+    .logo p{
+        padding: 0;
+    }
+    .nav-option{
+        display: none;
+    }
     .banner{
         display: flex;
         flex-direction: column;
@@ -406,6 +453,8 @@ footer{
         order: 2;
         text-align: center;
         width: 100%;
+        padding: 0 20px;
+        margin: 0 20px;
      
     }
     .banner-img{
