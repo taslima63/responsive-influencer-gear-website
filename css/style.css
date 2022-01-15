@@ -8,9 +8,10 @@
 }
 
 
-body{
+html,body{
     margin: 0;
     padding: 0;
+    border: 0px;
     clear: both;
     font-style: var(--body-font);
 }
@@ -132,7 +133,7 @@ nav{
 
 
 /* Collection section */
-.container h3{
+.collection-title{
     color: #3A3A3A;
     font-size: 28px;
     font-weight: 600;
@@ -188,7 +189,46 @@ nav{
  }
 
  .product-name{
+     margin-top: 16px;
+     margin-bottom: 0;
     font-weight: 500;
     font-size: 28px;
     color: #18191F;
+ }
+
+ .product-price{
+     margin-top: 6px;
+     margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+ }
+
+ .available-service{
+    font-weight: 600;
+    font-size: 14px;
+    color: #787885;
+ }
+
+ .available-service span{
+     color: #12B0E8;
+ }
+
+ .available-service .stockOut{
+    color:crimson
+ }
+
+
+ /* Service style */
+
+ .seeMore{
+    margin-top: 50px;
+    
+ }
+
+ .seeMore a{
+     float: right;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;   
+    color: rgba(224, 44, 109, 0.87);
  }
